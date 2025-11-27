@@ -1,0 +1,10 @@
+.boxmodel {
+    background-color: cornflowerblue;
+    width: 300px;
+    height: auto;
+    border: 2px solid black;
+    padding: 20px;
+    padding-right: 3px;
+    margin: 50px;
+    box-sizing: border-box;
+}

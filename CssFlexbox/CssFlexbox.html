@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Flexbox </title>
+    <style>
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0; 
+    flex-wrap: wrap;
+   }
+   
+   body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: #333;
+    line-height: 1.6;
+    
+   }
+
+   header{
+    text-align: center;
+    background-color: #1b0202;
+    color: white;
+    padding: 40px 20px; 
+   }
+ 
+   .Product-container {
+    display: flex;
+    
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+   }
+  
+   .Product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 280px;
+   }
+   .Product-title {
+    color: #ff0c0c;
+    font-size: 1.5rem;
+    margin: 15px 0 ;
+
+   }
+   .Product-discription {
+    font-size: 1rem;
+    color: #020000;
+    text-align: center;
+    margin-bottom: 15px;
+
+   }
+
+   .Product-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    
+   }
+ 
+   .Product-btn:hover {
+    background-color: #333;
+   }
+
+   .footer{
+    background-color: rgb(2, 14, 10);
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 0;
+   
+
+   
+   }
+      
+   </style>
+
+</head>
+
+<body>
+    <header>
+        <h1> Amazing Projeckt</h1>
+        <p>Explore a collection of high quality Products </p>
+    </header>
+    <main>
+        <div class="Product-container">
+            <div class="Product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf-R6FxVj9kYQrgrQpCFiLFJWdrtsfQVIXebB55351sMnY_tDyJYjwUHjS7r00IRqHnEk&usqp=CAU"
+                   class="Products-image" alt="image">
+                   <h1 class="Product-title">Mac Book 12</h1>
+                   <p class="Product-discription"> The best Pc Computer</p>
+                   <span class="price">$999.99</span>
+                   <button class="Product-btn"> Add to Card</button>
+            </div>
+        
+        
+            <div class="Product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf-R6FxVj9kYQrgrQpCFiLFJWdrtsfQVIXebB55351sMnY_tDyJYjwUHjS7r00IRqHnEk&usqp=CAU"
+                   class="Products-image" alt="image">
+                   <h1 class="Product-title">Mac Book 13</h1>
+                   <p class="Product-discription"> The best Computer für Office</p>
+                   <span class="price">$299.99</span>
+                   <button class="Product-btn"> Add to Card</button>
+            
+        </div>
+        
+            <div class="Product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf-R6FxVj9kYQrgrQpCFiLFJWdrtsfQVIXebB55351sMnY_tDyJYjwUHjS7r00IRqHnEk&usqp=CAU"
+                   class="Products-image" alt="image">
+                   <h1 class="Product-title">Mac Book 15</h1>
+                   <p class="Product-discription"> The best Digital Camera</p>
+                   <span class="price">$1999.99</span>
+                   <button class="Product-btn"> Add to Card</button>
+            </div>
+        
+        
+            <div class="Product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf-R6FxVj9kYQrgrQpCFiLFJWdrtsfQVIXebB55351sMnY_tDyJYjwUHjS7r00IRqHnEk&usqp=CAU"
+                   class="Products-image" alt="image">
+                   <h1 class="Product-title">Mac Book 16</h1>
+                   <p class="Product-discription"> The best Mac Computer</p>
+                   <span class="price">$1500.99</span>
+                   <button class="Product-btn"> Add to Card</button>
+            </div>
+        
+        </div>
+    </main>
+
+    <footer class="footer"> &copy;myproduts 2025</footer>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+
+ /* Descendant Combinator */
+.blog-post{
+  font-weight: bold;
+}
+  
+/* Child Combinator */
+
+.blog-post > .title {
+
+    background-color: blueviolet;
+}
+
+/* adjacent Sibling Combinator (+) */
+
+.blog-post .title + .discription {
+    font-style: italic;
+
+}
+
+/* General Sibling Combinator (~) */
+
+.blog-post .meta ~ .content {
+  
+    background-color: brown;
+    font-style: italic;
+
+}

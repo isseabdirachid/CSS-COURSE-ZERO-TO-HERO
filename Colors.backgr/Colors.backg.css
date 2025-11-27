@@ -1,0 +1,34 @@
+
+/*Hexadecimal Colors */
+.mycolors{
+    background-color: #143D60
+}
+
+/* RGB & RGBA Colors */
+
+.myRGB{
+
+       background-color: rgb(60, 179, 113)
+}
+.myRGBA{
+    background-color: rgba(60, 60, 60,0.2);
+}
+
+.myHLS{
+    background-color: hsl(12, 100%, 60%);
+}
+.myHLSA{
+    background-color: hsla(50, 100%, 50%, 0.5)
+}
+
+.myBackimage{
+    width: 500px;
+    height: 300px;
+    font-weight: 100;
+   background-image: url("https://img.freepik.com/free-vector/copy-space-bokeh-spring-lights-background_52683-55649.jpg");
+   background-repeat: repeat;
+   background-size: cover;
+   background-position: center;
+   border-radius: 8px;
+}
+

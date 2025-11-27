@@ -1,0 +1,40 @@
+ /* Element Selector
+ h1 {
+    background-color: blue;
+    
+}/*
+
+  /*Universal Selector
+   {
+    margin: 0%;
+    padding: 10%;
+  }*/
+
+ /*Grouping Selector 
+  h1,h2,p{
+    color: brown;
+    background-color: aqua;
+  } */
+
+   /*Child Selector 
+   div p{
+    background-color: rgb(0, 0, 0);
+    font-size: larger;
+   }*/
+
+   /* Id Selector */
+       
+   #myid {
+      background-color: rgb(245, 10, 10);
+      
+   }
+
+  
+/* Class Selector*/
+
+.myclass {
+  background-color: aqua;
+  font-size: 50px;
+}
+  
+

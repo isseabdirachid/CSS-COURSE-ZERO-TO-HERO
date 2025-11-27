@@ -1,0 +1,21 @@
+.parents{
+
+    width: 800px;
+    height: 500px;
+    background-color: blueviolet;
+    font-size: 1rem;
+
+}
+.title {
+    font-size: 2rem;
+}
+.child {
+
+    width: 80%;
+    background-color: aliceblue;
+}
+.fullcreen{
+    width: 100vw;
+    height: 50vw;
+    background-color: aqua;
+}

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Css</title>
+     
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #f0f0f0;
+            color: #333;
+            width: 100%;
+            line-height: 1.6;
+        }
+
+        .grid-section {
+            background-color: white;
+            padding: 40px;
+            margin: 20px auto;
+            max-width: 1000px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+
+        }
+
+        .grid-box {
+            background-color: aqua;
+            padding: 40px;
+            text-align: center;
+            color: black;
+            font-size: 1.2rem;
+            border-radius: 8px;
+        }
+
+        .title-1 {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1.5rem;
+
+        }
+
+        .Responsive-grid-box {
+            background-color: white;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 1000px;
+        }
+
+        .title-2 {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1.5rem;
+        }
+
+        /* Resposive Marka aad ka rabto box yada isticmaal code hada ika hooseya sida lo galiyaa */
+        .Responsive-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .Responsive {
+            background-color: #08318a;
+            padding: 40px;
+            text-align: center;
+            color: black;
+            font-size: 1.2rem;
+            border-radius: 8px;
+        }
+
+        .title-3 {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1.5rem;
+        }
+
+        .spaning-grid-section {
+            background-color: white;
+            padding: 40px;
+            margin: 20px auto;
+            max-width: 1000px;
+        }
+
+        .spaning-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(2, 200px);
+
+        }
+
+        .spaning-grid-grid-box-1 {
+            background-color: aqua;
+            padding: 40px;
+            color: black;
+            margin: 10px;
+            font-size: 1.2rem;
+            border-radius: 8px;
+            text-align: center;
+            grid-column: span 2;
+        }
+
+        .spaning-grid-grid-box-2 {
+            background-color: rgb(1, 32, 32);
+            padding: 40px;
+            margin: 10px;
+            color: rgb(241, 241, 241);
+            font-size: 1.2rem;
+            border-radius: 8px;
+            text-align: center;
+            grid-row: span 2;
+        }
+
+        .spaning-grid-grid-box-3 {
+            background-color: rgb(206, 0, 144);
+            padding: 40px;
+            margin: 10px;
+            color: rgb(3, 60, 94);
+            font-size: 1.2rem;
+            border-radius: 8px;
+            text-align: center;
+
+        }
+
+        .spaning-grid-grid-box-4 {
+            background-color: aqua;
+            padding: 40px;
+            margin: 10px;
+            color: rgb(3, 60, 94);
+            font-size: 1.2rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .spaning-grid-grid-box-5 {
+            background-color: rgb(1, 32, 32);
+            padding: 40px;
+            margin: 10px;
+            color: rgb(255, 255, 255);
+            font-size: 1.2rem;
+            border-radius: 8px;
+            text-align: center;
+
+        }
+
+        .spaning-grid-grid-box-6 {
+            background-color: rgb(206, 0, 144);
+            padding: 40px;
+            margin: 10px;
+            color: rgb(3, 60, 94);
+            font-size: 1.2rem;
+            border-radius: 8px;
+            text-align: center;
+            grid-column: span 2;
+        }
+
+        .title-4 {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1.5rem;
+        }
+
+        .aligment-gid-section {
+            background-color: white;
+            padding: 40px;
+            margin: 20px auto;
+            max-width: 1000px;
+        }
+
+        .aligment-gid {
+            display: grid;
+            grid-template-columns: repeat(4, 200px);
+            gap: 20px;
+        }
+
+        .aligment-grid-box-1 {
+            background-color: #08318a;
+            padding: 40px;
+            margin: 10px;
+            font-size: 1.2rem;
+            color: white;
+            border-radius: 8px;
+            text-align: center;
+            grid-column-end:  span 2;
+
+        }
+
+        .aligment-grid-box-2 {
+            background-color: #08318a;
+            padding: 40px;
+            margin: 10px;
+            font-size: 1.2rem;
+            color: white;
+            border-radius: 8px;
+            text-align: center;
+            grid-row-end: span 2;
+
+        }
+        .aligment-grid-box-3{
+            background-color: #08318a;
+            padding: 40px;
+            margin: 10px;
+            font-size: 1.2rem;
+            color: white;
+            border-radius: 8px;
+            text-align: center;
+            grid-row-end: span 3;
+            
+        }
+        .aligment-grid-box-4{
+            background-color: #08318a;
+            padding: 40px;
+            margin: 10px;
+            font-size: 1.2rem;
+            color: white;
+            border-radius: 8px;
+            text-align: center;
+            
+            
+        }
+        .aligment-grid-box-5{
+            background-color: #08318a;
+            padding: 40px;
+            margin: 10px;
+            font-size: 1.2rem;
+            color: white;
+            border-radius: 8px;
+            text-align: center;
+                      
+        }
+        .aligment-grid-box-6{
+            background-color: #08318a;
+            padding: 40px;
+            margin: 10px;
+            font-size: 1.2rem;
+            color: white;
+            border-radius: 8px;
+            text-align: center;
+            grid-column-start: span 3;
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="grid-section">
+        <h1 class="title-1">1 Simple grid layout</h1>
+        <div class="grid-container">
+            <div class="grid-box">Box 1</div>
+            <div class="grid-box">Box 2</div>
+            <div class="grid-box">Box 3</div>
+            <div class="grid-box">Box 4</div>
+            <div class="grid-box">Box 5</div>
+            <div class="grid-box">Box 6</div>
+        </div>
+    </section>
+    <section class="Responsive-grid-box">
+        <h1 class="title-2">2 Responsive Grid layout</h1>
+        <div class="Responsive-grid">
+            <div class="Responsive">Box 1</div>
+            <div class="Responsive">Box 2</div>
+            <div class="Responsive">Box 3</div>
+            <div class="Responsive">Box 4</div>
+            <div class="Responsive">Box 5</div>
+            <div class="Responsive">Box 6</div>
+
+        </div>
+    </section>
+    <section class="spaning-grid-section">
+        <h1 class="title-3">3 spaning grid layout</h1>
+        <div class="spaning-grid">
+            <div class="spaning-grid-grid-box-1">Box 1</div>
+            <div class="spaning-grid-grid-box-2">Box 2</div>
+            <div class="spaning-grid-grid-box-3">Box 3</div>
+            <div class="spaning-grid-grid-box-4">Box 4</div>
+            <div class="spaning-grid-grid-box-5">Box 5</div>
+            <div class="spaning-grid-grid-box-6">Box 6</div>
+        </div>
+    </section>
+    <section class="aligment-gid-section">
+        <h1 class="title-4">4 Grid aligment layout</h1>
+        <div class="aligment-gid">
+            <div class="aligment-grid-box-1">Box 1</div>
+            <div class="aligment-grid-box-2">Box 2</div>
+            <div class="aligment-grid-box-3">Box 3</div>
+            <div class="aligment-grid-box-4">Box 4</div>
+            <div class="aligment-grid-box-5">Box 5</div>
+            <div class="aligment-grid-box-6">Box 6</div>
+        </div>
+    </section>
+</body>
+
+</html>

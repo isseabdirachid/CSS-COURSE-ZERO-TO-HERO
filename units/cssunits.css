@@ -1,0 +1,22 @@
+.parents{
+
+    width: 800px;
+    height: 500px;
+    background-color: blueviolet;
+    font-size: 1rem;
+
+}
+.title {
+    font-size: 2rem;
+}
+.child {
+
+    width: 80%;
+    background-color: aliceblue;
+}
+/* Marka aad isticmaalayso VW waaxa free screen shashad walba ayuu la qabatimi karaa */
+.fullcreen{
+    width: 100vw;
+    height: 50%;
+    background-color: aqua;
+}

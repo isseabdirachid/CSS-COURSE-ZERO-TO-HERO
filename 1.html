@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Position Example</title>
+  <style>
+    .relative-box {
+      position: relative;
+      width: 300px;
+      height: 200px;
+      background-color: lightblue;
+      margin-bottom: 50px;
+    }
+
+    .absolute-box {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 100px;
+      height: 100px;
+      background-color: coral;
+    }
+
+    .fixed-box {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      width: 100px;
+      height: 50px;
+      background-color: lightgreen;
+    }
+
+    .sticky-header {
+      position: sticky;
+      top: 0;
+      background: rgb(161, 0, 194);
+      padding: 10px;
+      font-size: 20px;
+    }
+
+    body {
+      height: 2000px; /* si aad u aragto scroll-ka */
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sticky-header">Sticky Header</div>
+
+  <div class="relative-box">
+    Relative Box
+    <div class="absolute-box">Absolute Box</div>
+  </div>
+
+  <div class="fixed-box">Fixed Box</div>
+
+  <p>Scroll down the page to see how sticky and fixed elements behave!</p>
+
+</body>
+</html>

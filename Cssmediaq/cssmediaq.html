@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cssmediaq</title>
+
+    <style>
+     *{
+        margin: 0;
+        padding: 0;
+        box-sizing: 0;
+     }
+
+body{
+    background-color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+}
+  .img{
+    width: 300px;
+  }
+h2{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    
+}
+
+p{
+    font-size: 1rem;
+    color: #666;
+
+}
+
+
+.post-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    max-width: 100%;
+    background-color: #666;
+    margin: 0 auto;
+
+
+}
+
+/* mobile devices */
+
+@media (max-width:480px) {
+    h2 {
+        font-size: 1.1rem;
+    }
+    p {
+        font-size: 0.9rem;
+
+    }
+    .post-container{
+        grid-template-columns: 1fr;
+    }
+  .img{
+    padding: auto;
+    margin: auto;
+  }
+
+}
+/* Tablet devices */
+
+@media (min-width:480px) {
+    h2 {
+        font-size: 1.3rem;
+    }
+    p {
+        font-size: 1rem;
+
+    }
+    .post-container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+}
+/* Desktop devices */
+
+@media (min-width:1024px) {
+    h2 {
+        font-size: 1.3rem;
+    }
+    p {
+        font-size: 1rem;
+
+    }
+    .post-container{
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+    }
+
+
+}
+
+
+    </style>
+</head>
+
+<body>
+    <section class="post-container">
+
+        <div class="post-card">
+            <img class="img"
+                src="https://assets.designhill.com/design-blog/wp-content/uploads/2022/11/Top-5-Poster-Template-Designs-For-2025.jpg  "/>
+            <H1>Post title</H1>
+            <p>This is the description for the post </p>
+        </div>
+        <div class="post-card">
+            <img
+            src="https://assets.designhill.com/design-blog/wp-content/uploads/2022/11/Top-5-Poster-Template-Designs-For-2025.jpg  " class="img" />
+            <H1>Post title</H1>
+            <p>This is the description for the post </p>
+        </div>
+        <div class="post-card">
+            <img
+            src="https://assets.designhill.com/design-blog/wp-content/uploads/2022/11/Top-5-Poster-Template-Designs-For-2025.jpg  " class="img" />
+            <H1>Post title</H1>
+            <p>This is the description for the post </p>
+        </div>
+        <div class="post-card">
+            <img
+            src="https://assets.designhill.com/design-blog/wp-content/uploads/2022/11/Top-5-Poster-Template-Designs-For-2025.jpg  " class="img" />
+            <H1>Post title</H1>
+            <p>This is the description for the post </p>
+        </div>
+        <div class="post-card">
+            <img
+            src="https://assets.designhill.com/design-blog/wp-content/uploads/2022/11/Top-5-Poster-Template-Designs-For-2025.jpg  " class="img" />
+            <H1>Post title</H1>
+            <p>This is the description for the post </p>
+        </div>
+
+        
+    </section>
+</body>
+
+</html>
